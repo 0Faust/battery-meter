@@ -1,0 +1,25 @@
+{
+  "id": "battery-meter",
+  "name": "Батарея",
+  "version": "1.0.0",
+  "author": "0Faust",
+  "description": {
+    "ru": "Заряд батареи на панели: процент, статус зарядки, предупреждение при низком заряде. Пиксельная полоска в стиле angelOS.",
+    "en": "Battery charge on the bar: percentage, charging status, low battery warning. Pixel bar in angelOS style."
+  },
+  "icon": "battery",
+  "enabledByDefault": true,
+  "main": "Main.qml",
+  "barWidget": "BarWidget.qml",
+  "desktopTitle": "battery.exe",
+  "desktopWidget": "DesktopWidget.qml",
+  "realms": ["heaven", "hell"],
+  "settings": "Settings.qml",
+  "menu": [
+    {
+      "label": "Батарея: настройки",
+      "icon": "battery",
+      "settings": "plugin:battery-meter"
+    }
+  ]
+}
