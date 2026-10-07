@@ -43,6 +43,15 @@ Column {
         }
 
         SettingRow {
+            label: I18n.t("Уведомления о низком заряде", "Low battery notifications")
+            hint: I18n.t("20%, 15%, 10% и 5%", "20%, 15%, 10% and 5%")
+            PxToggle {
+                checked: plugin ? plugin.get("notificationsEnabled", true) : true
+                onToggled: c => plugin.set("notificationsEnabled", c)
+            }
+        }
+
+        SettingRow {
             label: I18n.t("Виджет на рабочем столе", "Desktop widget")
             PxToggle {
                 checked: plugin ? plugin.get("desktopVisible", true) : true
@@ -51,7 +60,6 @@ Column {
         }
     }
 
-    // Live status block
     PxGroup {
         title: I18n.t("Текущий статус", "Current status")
         icon: "info"
