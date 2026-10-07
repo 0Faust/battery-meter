@@ -1,11 +1,11 @@
 {
   "id": "battery-meter",
   "name": "Батарея",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "0Faust",
   "description": {
-    "ru": "Заряд батареи на панели: процент, статус зарядки, предупреждение при низком заряде. Пиксельная полоска в стиле angelOS.",
-    "en": "Battery charge on the bar: percentage, charging status, low battery warning. Pixel bar in angelOS style."
+    "ru": "Заряд батареи на панели: процент, статус зарядки, предупреждения при 20%, 15%, 10% и 5%. Пиксельная полоска в стиле angelOS.",
+    "en": "Battery charge on the bar: percentage, charging status, and warnings at 20%, 15%, 10% and 5%. Pixel bar in angelOS style."
   },
   "icon": "battery",
   "enabledByDefault": true,
